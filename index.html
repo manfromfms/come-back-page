@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empty</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #comeback {
+            background-color: black;
+        }
+    </style>
 </head>
 <body>
-    
+    <div id="comeback">
+        Please, come back 😭😭😭
+    </div>
 
     <script>
+        const div = document.getElementById('comeback')
         window.addEventListener('blur', () => {
             document.title = 'Please, come back 😭'
+            div.style.display = 'none'
         })
 
         window.addEventListener('focus', () => {
             document.title = 'Empty'
+            div.style.display = 'block'
         })
     </script>
 </body>

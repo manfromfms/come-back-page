@@ -17,6 +17,7 @@
 
         #comeback {
             background-color: black;
+            color: white;
         }
     </style>
 </head>
@@ -29,12 +30,14 @@
         const div = document.getElementById('comeback')
         window.addEventListener('blur', () => {
             document.title = 'Please, come back 😭'
-            div.style.display = 'none'
+            document.body.style.background = 'black'
+            div.style.display = 'block'
         })
 
         window.addEventListener('focus', () => {
             document.title = 'Empty'
-            div.style.display = 'block'
+            document.body.style.background = 'white'
+            div.style.display = 'none'
         })
     </script>
 </body>

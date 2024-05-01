@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empty</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,800;1,800&display=swap" rel="stylesheet">
+
     <style>
         body {
             margin: 0;
@@ -15,6 +19,15 @@
             height: 100vh;
         }
 
+        .open-sans-span {
+            font-family: "Open Sans", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+
         #comeback {
             background-color: black;
             color: white;
@@ -23,7 +36,7 @@
 </head>
 <body>
     <div id="comeback">
-        Please, come back 😭😭😭
+        <span class="open-sans-span">Please, come back</span> 😭😭😭
     </div>
 
     <script>
